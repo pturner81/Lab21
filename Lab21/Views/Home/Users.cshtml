@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "Users";
+}
+
+<h2>Users</h2>
+
+<table border="1">
+    <tr>
+        <td>First Name</td>
+        <td>Last Name</td>
+        <td>Phone Number</td>
+        <td>Email</td>
+        <td>Password</td>
+    </tr>
+    @foreach (var x in ViewBag.users)
+    {
+
+        <tr>
+            <td>@x.FirstName</td>
+            <td>@x.LastName</td>
+            <td>@x.PhoneNumber</td>
+            <td>@x.Email</td>
+            <td>@x.Password</td>
+        </tr>
+    }
+</table>
